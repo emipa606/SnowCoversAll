@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCA.SnowDepth>Snow depth when things get lost: {0}</SCA.SnowDepth>
+  <SCA.NotifyOnRecover>Notify when an item is found</SCA.NotifyOnRecover>
+  <SCA.RecoveryNotification>{0} has been found under the snow</SCA.RecoveryNotification>
+  <SCA.OnlyInHomeArea>Only when item is found in Home area</SCA.OnlyInHomeArea>
+  <SCA.ThingFilter>Items that can be covered in snow</SCA.ThingFilter>
+  <SCA.CurrentModVersion>Installed mod-version: {0}</SCA.CurrentModVersion>
+</LanguageData>
