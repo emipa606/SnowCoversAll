@@ -1,5 +1,9 @@
 # Changelog for SnowCoversAll
 
+1.5.1 - Added an option to allow deterioration of items under the snow
+Used DeepL to update translations for ChineseSimplified, French, German
+
+
 1.5.0 - First publish
 Used DeepL to update translations for ChineseSimplified, French, German
 

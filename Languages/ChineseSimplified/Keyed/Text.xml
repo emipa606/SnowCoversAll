@@ -7,4 +7,5 @@
   <SCA.OnlyInHomeArea>仅当在主区域找到物品时</SCA.OnlyInHomeArea>
   <SCA.ThingFilter>可能被雪覆盖的物品</SCA.ThingFilter>
   <SCA.CurrentModVersion>已安装模块版本：{0}</SCA.CurrentModVersion>
+  <SCA.DeteriorationRate>雪下恶化率：{0}</SCA.DeteriorationRate>
 </LanguageData>

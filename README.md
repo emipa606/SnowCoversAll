@@ -1,4 +1,4 @@
-# [Snow Covers All]()
+# [Snow Covers All](https://steamcommunity.com/sharedfiles/filedetails/?id=3380299912)
 
 ![Image](https://i.imgur.com/iCj5o7O.png)
 
@@ -35,4 +35,6 @@ Since modding is just a hobby for me I expect no donations to keep modding. If y
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/SnowCoversAll?label=latest%20version&style=plastic&labelColor=0070cd&color=white)](https://steamcommunity.com/sharedfiles/filedetails/changelog/) | tags: snow,  hiding
+[![Image](https://img.shields.io/github/v/release/emipa606/SnowCoversAll?label=latest%20version&style=plastic&labelColor=0070cd&color=white)](https://steamcommunity.com/sharedfiles/filedetails/changelog/) | tags: snow,  hiding 
+
+[![Image](https://img.shields.io/github/v/release/emipa606/SnowCoversAll?label=latest%20version&style=plastic&labelColor=0070cd&color=white)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3380299912) | tags: snow,  hiding

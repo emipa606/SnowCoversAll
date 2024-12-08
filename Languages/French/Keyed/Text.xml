@@ -7,4 +7,5 @@
   <SCA.OnlyInHomeArea>Uniquement lorsque l'objet est trouvé dans la zone d'accueil</SCA.OnlyInHomeArea>
   <SCA.ThingFilter>Objets pouvant être recouverts de neige</SCA.ThingFilter>
   <SCA.CurrentModVersion>Version de mod installée : {0}</SCA.CurrentModVersion>
+  <SCA.DeteriorationRate>Taux de détérioration sous la neige : {0}</SCA.DeteriorationRate>
 </LanguageData>

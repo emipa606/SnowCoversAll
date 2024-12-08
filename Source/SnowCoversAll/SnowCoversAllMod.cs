@@ -53,10 +53,19 @@ internal class SnowCoversAllMod : Mod
         Settings.SnowDepth =
             listing_Standard.SliderLabeled("SCA.SnowDepth".Translate(Settings.SnowDepth.ToStringPercent()),
                 Settings.SnowDepth, 0.05f, 1f);
+        Settings.DeteriorationRate =
+            listing_Standard.SliderLabeled(
+                "SCA.DeteriorationRate".Translate(Settings.DeteriorationRate.ToStringPercent()),
+                Settings.DeteriorationRate, 0f, 1f);
+
         listing_Standard.CheckboxLabeled("SCA.NotifyOnRecover".Translate(), ref Settings.NotifyOnRecover);
         if (Settings.NotifyOnRecover)
         {
             listing_Standard.CheckboxLabeled("SCA.OnlyInHomeArea".Translate(), ref Settings.OnlyInHomeArea);
+        }
+        else
+        {
+            listing_Standard.Gap();
         }
 
         if (currentVersion != null)

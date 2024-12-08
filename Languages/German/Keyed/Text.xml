@@ -7,4 +7,5 @@
   <SCA.OnlyInHomeArea>Nur wenn das Objekt im Home-Bereich gefunden wird</SCA.OnlyInHomeArea>
   <SCA.ThingFilter>Gegenstände, die mit Schnee bedeckt werden können</SCA.ThingFilter>
   <SCA.CurrentModVersion>Installierte Mod-Version: {0}</SCA.CurrentModVersion>
+  <SCA.DeteriorationRate>Verschlechterungsrate unter Schnee: {0}</SCA.DeteriorationRate>
 </LanguageData>

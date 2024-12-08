@@ -7,6 +7,7 @@ namespace SnowCoversAll;
 /// </summary>
 internal class SnowCoversAllSettings : ModSettings
 {
+    public float DeteriorationRate;
     public bool NotifyOnRecover;
     public bool OnlyInHomeArea;
     public float SnowDepth = 0.5f;
@@ -18,6 +19,7 @@ internal class SnowCoversAllSettings : ModSettings
     {
         base.ExposeData();
         Scribe_Values.Look(ref SnowDepth, "SnowDepth", 0.5f);
+        Scribe_Values.Look(ref DeteriorationRate, "DeteriorationRate");
         Scribe_Values.Look(ref NotifyOnRecover, "NotifyOnRecover");
         Scribe_Values.Look(ref OnlyInHomeArea, "OnlyInHomeArea");
     }
