@@ -1,9 +1,10 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30204.135
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnowCoversAll", "SnowCoversAll\SnowCoversAll.csproj", "{3E06096B-8065-4F25-805B-71CBB5E9C42F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnowCoversAllSandstorm", "SnowCoversAllSandstorm\SnowCoversAllSandstorm.csproj", "{09E877D5-DD9F-4083-A622-E3BB3A79C64B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +16,10 @@ Global
 		{3E06096B-8065-4F25-805B-71CBB5E9C42F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E06096B-8065-4F25-805B-71CBB5E9C42F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E06096B-8065-4F25-805B-71CBB5E9C42F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09E877D5-DD9F-4083-A622-E3BB3A79C64B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09E877D5-DD9F-4083-A622-E3BB3A79C64B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09E877D5-DD9F-4083-A622-E3BB3A79C64B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09E877D5-DD9F-4083-A622-E3BB3A79C64B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

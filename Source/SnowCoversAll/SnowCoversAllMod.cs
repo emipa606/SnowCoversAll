@@ -5,7 +5,7 @@ using Verse;
 namespace SnowCoversAll;
 
 [StaticConstructorOnStartup]
-internal class SnowCoversAllMod : Mod
+public class SnowCoversAllMod : Mod
 {
     /// <summary>
     ///     The instance of the settings to be read by the mod
@@ -13,8 +13,6 @@ internal class SnowCoversAllMod : Mod
     public static SnowCoversAllMod instance;
 
     private static string currentVersion;
-
-    private static readonly ThingFilterUI.UIState thingFilterState = new ThingFilterUI.UIState();
 
     /// <summary>
     ///     Constructor
@@ -30,7 +28,7 @@ internal class SnowCoversAllMod : Mod
     /// <summary>
     ///     The instance-settings for the mod
     /// </summary>
-    internal SnowCoversAllSettings Settings { get; }
+    public SnowCoversAllSettings Settings { get; }
 
     /// <summary>
     ///     The title for the mod-settings
@@ -50,12 +48,18 @@ internal class SnowCoversAllMod : Mod
     {
         var listing_Standard = new Listing_Standard();
         listing_Standard.Begin(rect);
+        var sandAddon = "";
+        if (SnowCoversAll.SandstormsLoaded)
+        {
+            sandAddon = $"/{"SCA.sand".Translate()}";
+        }
+
         Settings.SnowDepth =
-            listing_Standard.SliderLabeled("SCA.SnowDepth".Translate(Settings.SnowDepth.ToStringPercent()),
+            listing_Standard.SliderLabeled("SCA.SnowDepth".Translate(Settings.SnowDepth.ToStringPercent(), sandAddon),
                 Settings.SnowDepth, 0.05f, 1f);
         Settings.DeteriorationRate =
             listing_Standard.SliderLabeled(
-                "SCA.DeteriorationRate".Translate(Settings.DeteriorationRate.ToStringPercent()),
+                "SCA.DeteriorationRate".Translate(Settings.DeteriorationRate.ToStringPercent(), sandAddon),
                 Settings.DeteriorationRate, 0f, 1f);
 
         listing_Standard.CheckboxLabeled("SCA.NotifyOnRecover".Translate(), ref Settings.NotifyOnRecover);

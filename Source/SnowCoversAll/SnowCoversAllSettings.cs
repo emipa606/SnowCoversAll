@@ -5,7 +5,7 @@ namespace SnowCoversAll;
 /// <summary>
 ///     Definition of the settings for the mod
 /// </summary>
-internal class SnowCoversAllSettings : ModSettings
+public class SnowCoversAllSettings : ModSettings
 {
     public float DeteriorationRate;
     public bool NotifyOnRecover;

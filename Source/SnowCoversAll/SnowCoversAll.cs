@@ -11,8 +11,11 @@ public static class SnowCoversAll
     private static readonly Dictionary<Map, LostInSnow_MapComponent> mapComponents =
         new Dictionary<Map, LostInSnow_MapComponent>();
 
+    public static readonly bool SandstormsLoaded;
+
     static SnowCoversAll()
     {
+        SandstormsLoaded = ModsConfig.IsActive("Nightmare.Sandstorms");
         new Harmony("Mlie.SnowCoversAll").PatchAll(Assembly.GetExecutingAssembly());
     }
 

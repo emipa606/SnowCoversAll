@@ -5,11 +5,11 @@
 After hours of snowfall your pawn can somehow still see the revolver and five silver dropped by the raider the night before?
 Not anymore!
 
-Items left out without roof-cover can now be hidden under the snow.
+Items left out without roof-cover will now be hidden under the snow.
 Pawns can find them by shoveling away the snow or wait for the snow to melt away.
 All loose items except chunks will be hidden by the snow.
 
-The exact level of snow can be set in the mod-options.
+The exact level of snow can be set in the mod-options as well as if the items should continue to deteriorate under the snow.
 You can also get a notification when something is found again, as well as limit this notification for items in the home-area.
 
 Enjoy!
@@ -34,7 +34,6 @@ Since modding is just a hobby for me I expect no donations to keep modding. If y
 
 
  
-
 [![Image](https://img.shields.io/github/v/release/emipa606/SnowCoversAll?label=latest%20version&style=plastic&labelColor=0070cd&color=white)](https://steamcommunity.com/sharedfiles/filedetails/changelog/) | tags: snow,  hiding 
 
 [![Image](https://img.shields.io/github/v/release/emipa606/SnowCoversAll?label=latest%20version&style=plastic&labelColor=0070cd&color=white)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3380299912) | tags: snow,  hiding
