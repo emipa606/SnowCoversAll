@@ -12,6 +12,8 @@ All loose items except chunks will be hidden by the snow.
 The exact level of snow can be set in the mod-options as well as if the items should continue to deteriorate under the snow.
 You can also get a notification when something is found again, as well as limit this notification for items in the home-area.
 
+This mod also works with the sand cover from the [Sandstorms](https://steamcommunity.com/sharedfiles/filedetails/?id=2967158643) mod by NightmareCorporation. Makes it even more important for pawns to clean out the sand-buildup!
+
 Enjoy!
 
 ![Image](https://i.imgur.com/Ds0rBAD.png)
@@ -34,6 +36,6 @@ Since modding is just a hobby for me I expect no donations to keep modding. If y
 
 
  
-[![Image](https://img.shields.io/github/v/release/emipa606/SnowCoversAll?label=latest%20version&style=plastic&labelColor=0070cd&color=white)](https://steamcommunity.com/sharedfiles/filedetails/changelog/) | tags: snow,  hiding 
+[![Image](https://img.shields.io/github/v/release/emipa606/SnowCoversAll?label=latest%20version&style=plastic&labelColor=0070cd&color=white)](https://steamcommunity.com/sharedfiles/filedetails/changelog/) | tags: snow,  hiding, sand 
 
 [![Image](https://img.shields.io/github/v/release/emipa606/SnowCoversAll?label=latest%20version&style=plastic&labelColor=0070cd&color=white)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3380299912) | tags: snow,  hiding

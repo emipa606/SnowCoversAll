@@ -29,6 +29,11 @@ public class LostInSnow_MapComponent : MapComponent
             return;
         }
 
+        if (things.Any(thing => thing.def.thingClass == typeof(Building_Storage)))
+        {
+            return;
+        }
+
         // ReSharper disable once ForCanBeConvertedToForeach, things despawn in loop
         for (var index = 0; index < things.Count; index++)
         {

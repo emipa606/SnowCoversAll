@@ -1,5 +1,8 @@
 # Changelog for SnowCoversAll
 
+1.5.3 - Items in storages will no longer get covered in snow
+
+
 1.5.2 - Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2967158643]Sandstorms[/url]
 Used DeepL to update translations for ChineseSimplified, French, German
 
