@@ -4,12 +4,12 @@ using Verse;
 
 namespace SnowCoversAll;
 
-[HarmonyPatch(typeof(SteadyEnvironmentEffects), "DoCellSteadyEffects")]
+[HarmonyPatch(typeof(SteadyEnvironmentEffects), nameof(SteadyEnvironmentEffects.DoCellSteadyEffects))]
 public static class SteadyEnvironmentEffects_DoCellSteadyEffects
 {
     public static void Postfix(IntVec3 c, Map ___map)
     {
-        if (!Rand.Chance(SnowCoversAllMod.instance.Settings.DeteriorationRate))
+        if (!Rand.Chance(SnowCoversAllMod.Instance.Settings.DeteriorationRate))
         {
             return;
         }

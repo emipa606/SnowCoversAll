@@ -5,4 +5,8 @@
     <li>1.5</li>
     <li IfModActive="Nightmare.Sandstorms">Mods/Sandstorm/1.5</li>
   </v1.5>
+  <v1.6>
+    <li>/</li>
+    <li>1.6</li>
+  </v1.6>
 </loadFolders>

@@ -3,10 +3,10 @@ using Verse;
 
 namespace SnowCoversAll;
 
-[HarmonyPatch(typeof(SnowGrid), nameof(SnowGrid.SetDepth))]
-public static class SnowGrid_SetDepth
+[HarmonyPatch(typeof(SandGrid), nameof(SandGrid.SetDepth))]
+public static class SandGrid_SetDepth
 {
-    public static void Prefix(out float __state, SnowGrid __instance, IntVec3 c)
+    public static void Prefix(out float __state, SandGrid __instance, IntVec3 c)
     {
         __state = __instance.GetDepth(c);
     }
@@ -18,14 +18,14 @@ public static class SnowGrid_SetDepth
         if (__state > SnowCoversAllMod.Instance.Settings.SnowDepth &&
             newDepth < SnowCoversAllMod.Instance.Settings.SnowDepth)
         {
-            mapComponent.RecoverThings(c);
+            mapComponent.RecoverThings(c, "sand");
             return;
         }
 
         if (__state < SnowCoversAllMod.Instance.Settings.SnowDepth &&
             newDepth > SnowCoversAllMod.Instance.Settings.SnowDepth)
         {
-            mapComponent.LoseThings(c);
+            mapComponent.LoseThings(c, "sand");
         }
     }
 }

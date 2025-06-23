@@ -3,10 +3,10 @@ using Verse;
 
 namespace SnowCoversAll;
 
-[HarmonyPatch(typeof(SnowGrid), nameof(SnowGrid.AddDepth))]
-public static class SnowGrid_AddDepth
+[HarmonyPatch(typeof(SandGrid), nameof(SandGrid.AddDepth))]
+public static class SandGrid_AddDepth
 {
-    public static void Postfix(SnowGrid __instance, IntVec3 c, float depthToAdd, Map ___map)
+    public static void Postfix(SandGrid __instance, IntVec3 c, float depthToAdd, Map ___map)
     {
         var currentDepth = __instance.GetDepth(c);
         var mapComponent = SnowCoversAll.GetLostInSnowMapComponent(___map);
@@ -18,7 +18,7 @@ public static class SnowGrid_AddDepth
                 return;
             }
 
-            mapComponent.LoseThings(c);
+            mapComponent.LoseThings(c, "sand");
             return;
         }
 
@@ -27,6 +27,6 @@ public static class SnowGrid_AddDepth
             return;
         }
 
-        mapComponent.RecoverThings(c);
+        mapComponent.RecoverThings(c, "sand");
     }
 }

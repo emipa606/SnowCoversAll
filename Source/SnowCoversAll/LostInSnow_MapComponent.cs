@@ -7,13 +7,13 @@ namespace SnowCoversAll;
 
 public class LostInSnow_MapComponent : MapComponent
 {
-    private Dictionary<Thing, string> coveredByMaterials = new Dictionary<Thing, string>();
+    private Dictionary<Thing, string> coveredByMaterials = new();
     private List<Thing> coveredByMaterialsKeys = [];
     private List<string> coveredByMaterialsValues = [];
-    private Dictionary<Thing, IntVec3> forbiddenLostInSnow = new Dictionary<Thing, IntVec3>();
+    private Dictionary<Thing, IntVec3> forbiddenLostInSnow = new();
     private List<Thing> forbiddenLostInSnowKeys = [];
     private List<IntVec3> forbiddenLostInSnowValues = [];
-    private Dictionary<Thing, IntVec3> lostInSnow = new Dictionary<Thing, IntVec3>();
+    private Dictionary<Thing, IntVec3> lostInSnow = new();
     private List<Thing> lostInSnowKeys = [];
     private List<IntVec3> lostInSnowValues = [];
 
@@ -68,7 +68,7 @@ public class LostInSnow_MapComponent : MapComponent
         IEnumerable<Thing> thingsToRecover;
         if (lostInSnow.Any())
         {
-            thingsToRecover = lostInSnow.Where(pair => pair.Value == cell).Select(pair => pair.Key);
+            thingsToRecover = lostInSnow.Where(pair => pair.Value == cell).Select(pair => pair.Key).ToArray();
             if (thingsToRecover.Any())
             {
                 for (var i = 0; i < thingsToRecover.Count(); i++)
@@ -96,7 +96,7 @@ public class LostInSnow_MapComponent : MapComponent
             return;
         }
 
-        thingsToRecover = forbiddenLostInSnow.Where(pair => pair.Value == cell).Select(pair => pair.Key);
+        thingsToRecover = forbiddenLostInSnow.Where(pair => pair.Value == cell).Select(pair => pair.Key).ToArray();
         if (!thingsToRecover.Any())
         {
             return;
@@ -124,12 +124,12 @@ public class LostInSnow_MapComponent : MapComponent
 
     private void notifyAboutItem(Thing itemFound, IntVec3 cell, string coveredBy = "snow")
     {
-        if (!SnowCoversAllMod.instance.Settings.NotifyOnRecover)
+        if (!SnowCoversAllMod.Instance.Settings.NotifyOnRecover)
         {
             return;
         }
 
-        if (SnowCoversAllMod.instance.Settings.OnlyInHomeArea && !map.areaManager.Home[cell])
+        if (SnowCoversAllMod.Instance.Settings.OnlyInHomeArea && !map.areaManager.Home[cell])
         {
             return;
         }
@@ -154,7 +154,7 @@ public class LostInSnow_MapComponent : MapComponent
 
     public void DeteriorateCell(IntVec3 cell)
     {
-        var validItems = lostInSnow.Where(pair => pair.Value == cell);
+        IEnumerable<KeyValuePair<Thing, IntVec3>> validItems = lostInSnow.Where(pair => pair.Value == cell).ToArray();
 
         if (validItems.Any())
         {
@@ -167,7 +167,7 @@ public class LostInSnow_MapComponent : MapComponent
             }
         }
 
-        validItems = forbiddenLostInSnow.Where(pair => pair.Value == cell);
+        validItems = forbiddenLostInSnow.Where(pair => pair.Value == cell).ToArray();
         if (!validItems.Any())
         {
             return;
