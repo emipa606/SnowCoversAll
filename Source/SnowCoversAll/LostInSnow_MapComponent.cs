@@ -158,12 +158,9 @@ public class LostInSnow_MapComponent : MapComponent
 
         if (validItems.Any())
         {
-            foreach (var validItem in validItems)
+            foreach (var validItem in validItems.Where(deteriorateThing))
             {
-                if (deteriorateThing(validItem))
-                {
-                    lostInSnow.Remove(validItem.Key);
-                }
+                lostInSnow.Remove(validItem.Key);
             }
         }
 
@@ -173,12 +170,9 @@ public class LostInSnow_MapComponent : MapComponent
             return;
         }
 
-        foreach (var validItem in validItems)
+        foreach (var validItem in validItems.Where(deteriorateThing))
         {
-            if (deteriorateThing(validItem))
-            {
-                forbiddenLostInSnow.Remove(validItem.Key);
-            }
+            forbiddenLostInSnow.Remove(validItem.Key);
         }
     }
 
